@@ -1,0 +1,41 @@
+
+/* UTILITY CLASSES */
+.txt-cntr {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+.flex > *:not(input,button) {
+    flex-grow: 1;
+}
+
+
+body { padding-inline: 5vw; }
+
+dl {
+    margin: 0;
+    list-style-type: none;
+}
+
+/* VARIABLES DECLARED as INLINE CSS */
+aside > * {
+    background-color: var(--bg);
+    padding: var(--pd);
+    font-size: var(--fs);
+    line-height: var(--lh);
+}
+
+footer {
+    font-size: 0.8rem;
+    padding-block-start: 1rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:375px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
